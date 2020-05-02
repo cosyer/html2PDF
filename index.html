@@ -273,15 +273,14 @@
         </p>
       </article>
     </section>
-    <footer>write by linwalker @2017</footer>
     <script type="text/javascript" src="./js/html2canvas.js"></script>
     <script type="text/javascript" src="./js/jsPdf.debug.js"></script>
     <script type="text/javascript">
       var downPdf = document.getElementById("renderPdf");
 
-      downPdf.onclick = function() {
+      downPdf.onclick = function () {
         html2canvas(document.body, {
-          onrendered: function(canvas) {
+          onrendered: function (canvas) {
             var contentWidth = canvas.width;
             var contentHeight = canvas.height;
 
@@ -322,7 +321,7 @@
             }
 
             pdf.save("content.pdf");
-          }
+          },
         });
       };
     </script>

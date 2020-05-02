@@ -1,6 +1,3 @@
-/**
- * Created by linyuhua on 2017/4/25.
- */
 (function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
         typeof define === 'function' && define.amd ? define(factory) :
@@ -12,10 +9,6 @@
         } : function (obj) {
             return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
         };
-
-
-
-
 
     var asyncGenerator = function () {
         function AwaitValue(value) {
