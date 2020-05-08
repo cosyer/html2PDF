@@ -46,7 +46,7 @@ doc.save('a4.pdf');
 var doc = new jsPDF('landscape','pt',[205, 115])
 
 // 将图片转化为dataUrl
-var imageData = ‘data:image/png;base64,...’;
+var imageData = 'data:image/png;base64,...';
 
 doc.addImage(imageData, 'PNG', 0, 0, 205, 115);
 doc.save('a4.pdf');
